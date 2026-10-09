@@ -1,0 +1,11 @@
+feature_name,feature_type,source,description
+emergency_text,text,input,Raw emergency text description
+category,categorical,target,Primary emergency category
+severity,categorical,target,Severity label
+required_skills,text,target,Required skill list
+responder_roles,text,target,Multi-label responder roles
+latitude,numeric,context,Incident latitude
+longitude,numeric,context,Incident longitude
+location,categorical,context,Location label
+timestamp,datetime,context,Occurrence timestamp
+context,text,context,Additional scene context

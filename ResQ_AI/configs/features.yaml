@@ -1,0 +1,19 @@
+text_features:
+  - emergency_text
+  - context_summary
+
+structured_features:
+  - location_type
+  - hour_of_day
+  - day_of_week
+
+excluded_features:
+  - assigned_responder
+  - actual_response_time
+  - resolution_status
+  - response_status
+
+missing_value_strategy:
+  text: "empty_string"
+  numeric: "median"
+  categorical: "most_frequent"

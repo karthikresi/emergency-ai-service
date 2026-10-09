@@ -1,0 +1,12 @@
+category:
+  name: "resq-category-v1.0"
+  model_type: "tfidf_logistic_regression"
+severity:
+  name: "resq-severity-v1.0"
+  model_type: "tfidf_linear_svm"
+skill:
+  name: "resq-skill-v1.0"
+  model_type: "tfidf_multilabel_classifier"
+responder:
+  name: "resq-responder-v1.0"
+  model_type: "rule_plus_ranking"

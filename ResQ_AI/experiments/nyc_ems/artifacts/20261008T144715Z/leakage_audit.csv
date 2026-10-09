@@ -1,0 +1,32 @@
+field,severity_experiment,response_experiment,used_as_feature,reason
+incident_id,CONTEXT_ONLY,CONTEXT_ONLY,False,Unique incident identifier; never a predictive input.
+incident_datetime,VALID_AT_PREDICTION_TIME,VALID_AT_PREDICTION_TIME,True,"Call creation time; transformed into hour, weekday, and month cycles."
+initial_call_type,VALID_AT_PREDICTION_TIME,VALID_AT_PREDICTION_TIME,True,"Initial call taker code, available at incident intake."
+initial_severity_level_code,TARGET,VALID_AT_PREDICTION_TIME,True,Target for coded-severity experiment; prior intake triage input for response-time models.
+final_call_type,POST_DISPATCH,POST_DISPATCH,False,May reflect information learned after initial dispatch; excluded.
+final_severity_level_code,TARGET_DERIVED,POST_DISPATCH,False,Final severity can be revised using later information; excluded.
+first_assignment_datetime,POST_DISPATCH,TARGET_DERIVED,False,Occurs after intake; dispatch response time derives from assignment timing.
+valid_dispatch_rspns_time_indc,TARGET_DERIVED,TARGET_DERIVED,False,Used only to filter records with valid dispatch-response labels.
+dispatch_response_seconds_qy,POST_DISPATCH,TARGET,False,Observed response-duration label; never a feature.
+first_activation_datetime,POST_DISPATCH,POST_DISPATCH,False,Resource activation occurs after assignment.
+first_on_scene_datetime,POST_DISPATCH,TARGET_DERIVED,False,Outcome timestamp; incident response duration is derived from it.
+valid_incident_rspns_time_indc,TARGET_DERIVED,TARGET_DERIVED,False,Used only to filter records with valid incident-response labels.
+incident_response_seconds_qy,POST_DISPATCH,TARGET,False,Observed incident-to-scene duration; never a feature.
+incident_travel_tm_seconds_qy,POST_DISPATCH,LEAKAGE,False,Post-activation travel duration overlaps the response-time outcome.
+first_to_hosp_datetime,POST_DISPATCH,POST_DISPATCH,False,Occurs after dispatch and transport.
+first_hosp_arrival_datetime,POST_DISPATCH,POST_DISPATCH,False,Occurs after dispatch and transport.
+incident_close_datetime,POST_DISPATCH,POST_DISPATCH,False,Incident closure is an operational outcome.
+held_indicator,UNKNOWN,UNKNOWN,False,Timing/availability at intake is not documented; excluded.
+incident_disposition_code,POST_DISPATCH,POST_DISPATCH,False,Outcome/disposition is known after response; excluded.
+borough,VALID_AT_PREDICTION_TIME,VALID_AT_PREDICTION_TIME,True,Aggregated incident location available at intake.
+incident_dispatch_area,VALID_AT_PREDICTION_TIME,VALID_AT_PREDICTION_TIME,True,Dispatch-area location input; used as an intake-time area feature.
+zipcode,UNKNOWN,UNKNOWN,False,"Aggregated location; provenance/timing not established, excluded."
+policeprecinct,UNKNOWN,UNKNOWN,False,"Aggregated location; provenance/timing not established, excluded."
+citycouncildistrict,UNKNOWN,UNKNOWN,False,"Aggregated location; provenance/timing not established, excluded."
+communitydistrict,UNKNOWN,UNKNOWN,False,"Aggregated location; provenance/timing not established, excluded."
+communityschooldistrict,UNKNOWN,UNKNOWN,False,"Aggregated location; provenance/timing not established, excluded."
+congressionaldistrict,UNKNOWN,UNKNOWN,False,"Aggregated location; provenance/timing not established, excluded."
+reopen_indicator,POST_DISPATCH,POST_DISPATCH,False,Reopen status is an after-the-fact operational outcome.
+special_event_indicator,UNKNOWN,UNKNOWN,False,Availability at call intake is not documented; excluded.
+standby_indicator,UNKNOWN,UNKNOWN,False,May reflect later resource handling; excluded.
+transfer_indicator,UNKNOWN,UNKNOWN,False,May reflect later resource handling; excluded.

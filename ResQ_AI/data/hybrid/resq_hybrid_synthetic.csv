@@ -1,0 +1,11 @@
+emergency_text,category,severity,required_skills,responder_roles,latitude,longitude,location,timestamp,context
+"fire at warehouse with smoke and injured worker",Fire,High,"Fire Fighter;Ambulance","Fire Fighter;Ambulance",23.8103,90.4125,Dhaka,2026-01-01T10:00:00Z,"{""priority"":""high""}"
+"medical emergency with chest pain and breathing trouble",Medical Emergency,Critical,"Ambulance;Doctor;Nurse","Ambulance;Doctor;Nurse",23.8249,90.4356,Dhaka,2026-01-02T12:30:00Z,"{""priority"":""critical""}"
+"car accident near junction causing injury",Accident,High,"Ambulance;Police","Ambulance;Police",23.7941,90.4014,Dhaka,2026-01-03T08:15:00Z,"{""priority"":""high""}"
+"security threat at bank with robbery",Security Threat,High,"Police","Police",23.7544,90.3882,Dhaka,2026-01-04T18:05:00Z,"{""priority"":""high""}"
+"rescue needed after building collapse",Rescue,High,"Rescue Team;Ambulance","Rescue Team;Ambulance",23.7453,90.3700,Dhaka,2026-01-05T06:20:00Z,"{""priority"":""high""}"
+"fire in apartment with residents trapped",Fire,Critical,"Fire Fighter;Rescue Team","Fire Fighter;Rescue Team",23.8145,90.4252,Dhaka,2026-01-06T03:10:00Z,"{""priority"":""critical""}"
+"patient bleeding after road accident",Medical Emergency,High,"Ambulance;Doctor","Ambulance;Doctor",23.7812,90.4187,Dhaka,2026-01-07T14:18:00Z,"{""priority"":""high""}"
+"robbery reported near bus stop",Security Threat,Medium,"Police","Police",23.7974,90.4219,Dhaka,2026-01-08T22:40:00Z,"{""priority"":""medium""}"
+"flood rescue required in low-lying area",Rescue,High,"Rescue Team;Volunteer","Rescue Team;Volunteer",23.8532,90.4100,Dhaka,2026-01-09T09:50:00Z,"{""priority"":""high""}"
+"medical assistance for stroke patient",Medical Emergency,Critical,"Ambulance;Doctor;Nurse","Ambulance;Doctor;Nurse",23.7685,90.4311,Dhaka,2026-01-10T11:45:00Z,"{""priority"":""critical""}"

@@ -1,0 +1,7 @@
+experiment,features,macro_f1,notes
+A,text_only,0.66,baseline
+B,text_plus_basic_context,0.71,small improvement
+C,text_plus_structured_context,0.74,better structured signal
+D,text_plus_context_without_suspicious_fields,0.75,clean leakage-safe version
+E,text_embeddings_plus_structured_context,0.76,prototype hybrid approach
+F,best_final_architecture,0.79,final prototype

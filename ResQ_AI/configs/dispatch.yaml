@@ -1,0 +1,13 @@
+initial_radius_km: 1
+second_radius_km: 5
+third_radius_km: 10
+max_radius_km: 20
+max_notifications: 2
+escalation_threshold: 1
+skill_match_weight: 40
+availability_weight: 20
+distance_weight: 15
+eta_weight: 12
+reliability_weight: 18
+experience_weight: 10
+acceptance_weight: 10

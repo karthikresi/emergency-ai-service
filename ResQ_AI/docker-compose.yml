@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  resq-ai:
+    build: .
+    container_name: resq-ai
+    ports:
+      - '8000:8000'
+    environment:
+      APP_PORT: 8000
